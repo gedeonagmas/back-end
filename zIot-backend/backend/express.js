@@ -10,7 +10,10 @@ require("./schema");
 // //   res.sendFile(__dirname + "./src/iot-frontend/components/About.jsx");
 // // });
 const upload = require("../multer/upload");
-const {feedbackPostHandler,feedbackGetHandler}=require('./../operations/feedback');
+const {
+  feedbackPostHandler,
+  feedbackGetHandler,
+} = require("./../operations/feedback");
 const {
   projectsUploadHandler,
   materialUploadHandler,
@@ -70,7 +73,11 @@ const port = 2200;
 
 //middleware
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://iot-front-end.onrender.com",
+  })
+);
 app.use("/iotUploads", express.static(path.join(__dirname, "iotUploads")));
 //multer file fields
 const multipleUpload = upload.fields([
@@ -127,8 +134,8 @@ app.post("/admin/auth/create", adminAuthCreateHandler);
 app.patch("/admin/auth/update", adminAuthUpdateHandler);
 app.get("/admin/auth/get", adminAuthGetHandler);
 //feedback end points
-app.post('/feedback/post',feedbackPostHandler); 
-app.get('/feedback/get',feedbackGetHandler)
+app.post("/feedback/post", feedbackPostHandler);
+app.get("/feedback/get", feedbackGetHandler);
 //#################################################################################
 //listeners
 const server = app.listen(port, (err) => {
@@ -145,7 +152,7 @@ const server = app.listen(port, (err) => {
 //#################################################################################
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://iot-back-end.onrender.com",
   },
 });
 
