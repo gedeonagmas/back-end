@@ -1,0 +1,107 @@
+{
+  "name": "my-projects",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.1",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "async": "^3.2.4",
+    "axios": "^0.24.0",
+    "babel": "^6.23.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "browserify": "^17.0.0",
+    "core-js": "^3.23.3",
+    "cors": "^2.8.5",
+    "datenv": "^0.0.0",
+    "eiows": "^4.1.2",
+    "emoji-picker-react": "^4.0.6",
+    "eslint": "^8.20.0",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "firebase": "^9.8.4",
+    "graphql": "^16.5.0",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "leaflet": "^1.8.0",
+    "lodash": "^4.17.21",
+    "looger": "^4.1.0",
+    "messagebird": "^3.8.1",
+    "moment": "^2.29.3",
+    "mongo-gridfs": "^1.1.0",
+    "mongodb": "^4.7.0",
+    "mongoose": "^5.13.14",
+    "multer": "^1.4.4-lts.1",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.18",
+    "parsel": "^0.3.0",
+    "passport": "^0.6.0",
+    "path": "^0.12.7",
+    "postcss-cli": "^10.0.0",
+    "prettier": "^2.7.1",
+    "pusher": "^5.1.1-beta",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.36.1",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.8",
+    "redux": "^4.2.0",
+    "regenerator-runtime": "^0.13.9",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "sockjs": "^0.3.24",
+    "sockjs-client": "^1.6.1",
+    "swiper": "^8.3.2",
+    "timeago.js": "^4.0.2",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "nodemon": "nodemon ./zIot-backend/backend/express.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.6",
+    "utf-8-validate": "^5.0.9"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
