@@ -10,7 +10,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then((res) => {
-    console.log("### database connected successfully ###");
+    console.log("### database connected successfully on atlas ###");
   })
   .catch((err) => {
     console.log(err);
