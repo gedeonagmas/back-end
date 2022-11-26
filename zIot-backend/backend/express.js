@@ -74,9 +74,7 @@ const port = 2200;
 //middleware
 app.use(express.json());
 app.use(
-  cors({
-    origin: "https://iot-back-end.onrender.com",
-  })
+  cors()
 );
 app.use("/iotUploads", express.static(path.join(__dirname, "iotUploads")));
 //multer file fields
