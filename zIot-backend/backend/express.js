@@ -75,7 +75,7 @@ const port = 2200;
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://iot-front-end.onrender.com",
+    origin: "https://iot-back-end.onrender.com",
   })
 );
 app.use("/iotUploads", express.static(path.join(__dirname, "iotUploads")));
